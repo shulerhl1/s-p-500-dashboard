@@ -8,6 +8,7 @@ import utilities.dataframes as dfs
 years, decades = dfs.years, dfs.decades
 
 app = Dash(external_stylesheets=[dbc.themes.FLATLY, dbc.icons.BOOTSTRAP])
+server = app.server
 
 app.layout = dbc.Container([
 
