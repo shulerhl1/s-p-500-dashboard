@@ -69,8 +69,8 @@ def table_returns(value):
 
 
 df = pd.read_excel(
-    io=get_recent_file(),
-    # io=r'http://www.econ.yale.edu/~shiller/data/ie_data.xls'
+    # io=get_recent_file(),
+    io=r'http://www.econ.yale.edu/~shiller/data/ie_data.xls'
     sheet_name='Data',
     header=None,
     usecols='A:D',
