@@ -70,8 +70,7 @@ def table_returns(value):
 
 df = pd.read_excel(
     # io=get_recent_file(),
-    # io=r'http://www.econ.yale.edu/~shiller/data/ie_data.xls',
-    io='https://www.dropbox.com/scl/fi/tteuuhgirsyiujhaexmuf/ie_data-10.18.23.xls?rlkey=k0sqpoxp3r2hnb96je5t5naah&dl=0',
+    io=r'http://www.econ.yale.edu/~shiller/data/ie_data.xls',
     sheet_name='Data',
     header=None,
     usecols='A:D',
