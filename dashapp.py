@@ -16,7 +16,7 @@ app.layout = dbc.Container([
 
 	dbc.Card(
 		dbc.CardBody([
-			html.H3('S&P 500 Indexx', className='display-10'),
+			html.H3('S&P 500 Index', className='display-10'),
 			html.Hr(className='my-2'),
 			dbc.Row([
 				dbc.Col(html.P('Historical Returns', className='lead'))
