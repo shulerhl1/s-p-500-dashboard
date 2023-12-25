@@ -4,19 +4,19 @@ import numpy as np
 import numpy_financial as npf
 from datetime import datetime
 
-def get_recent_file():
-    target_directory = os.path.join(os.getcwd(), 'data')
+# def get_recent_file():
+#     target_directory = os.path.join(os.getcwd(), 'data')
 
-    filename_dict = {}
-    for file in os.listdir(target_directory):
-        name, ext = os.path.splitext(file)
-        try:
-            date = datetime.strptime(name.split(' ')[1], '%m.%d.%y')
-        except:
-            continue
-        filename_dict[date] = file
+#     filename_dict = {}
+#     for file in os.listdir(target_directory):
+#         name, ext = os.path.splitext(file)
+#         try:
+#             date = datetime.strptime(name.split(' ')[1], '%m.%d.%y')
+#         except:
+#             continue
+#         filename_dict[date] = file
 
-    return os.path.join(target_directory, filename_dict[max(filename_dict)])
+#     return os.path.join(target_directory, filename_dict[max(filename_dict)])
 
 def get_decade_list(target_list):
     def get_decade(target_year):
@@ -70,7 +70,8 @@ def table_returns(value):
 
 df = pd.read_excel(
     # io=get_recent_file(),
-    io=r'http://www.econ.yale.edu/~shiller/data/ie_data.xls',
+    # io=r'http://www.econ.yale.edu/~shiller/data/ie_data.xls',
+    io='ie_data.xls',
     sheet_name='Data',
     header=None,
     usecols='A:D',
